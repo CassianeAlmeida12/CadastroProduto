@@ -1,0 +1,17 @@
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\bin\Debug\net6.0-windows\AtProduto.exe
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\bin\Debug\net6.0-windows\AtProduto.deps.json
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\bin\Debug\net6.0-windows\AtProduto.runtimeconfig.json
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\bin\Debug\net6.0-windows\AtProduto.dll
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\bin\Debug\net6.0-windows\AtProduto.pdb
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.csproj.AssemblyReference.cache
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.Form1.resources
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.csproj.GenerateResource.cache
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.AssemblyInfoInputs.cache
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.AssemblyInfo.cs
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.csproj.CoreCompileInputs.cache
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.dll
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\refint\AtProduto.dll
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.pdb
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\AtProduto.genruntimeconfig.cache
+C:\Users\2022102020029\source\repos\AtProduto\AtProduto\obj\Debug\net6.0-windows\ref\AtProduto.dll
