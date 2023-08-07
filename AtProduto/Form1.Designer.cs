@@ -43,7 +43,7 @@
             this.novotxt = new System.Windows.Forms.Button();
             this.cadastrar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,6 +139,7 @@
             // 
             // tb_valor
             // 
+            this.tb_valor.Enabled = false;
             this.tb_valor.Location = new System.Drawing.Point(160, 209);
             this.tb_valor.Name = "tb_valor";
             this.tb_valor.Size = new System.Drawing.Size(100, 23);
@@ -181,22 +182,13 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(452, 155);
             this.dataGridView1.TabIndex = 14;
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(22, 261);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(38, 15);
-            this.label.TabIndex = 15;
-            this.label.Text = "label7";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 450);
-            this.Controls.Add(this.label);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cadastrar);
             this.Controls.Add(this.novotxt);
@@ -237,6 +229,6 @@
         private Button novotxt;
         private Button cadastrar;
         private DataGridView dataGridView1;
-        private Label label;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
