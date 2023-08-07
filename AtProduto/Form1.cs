@@ -2,7 +2,7 @@ namespace AtProduto
 {
     public partial class Form1 : Form
     {
-        List<Produto> produtos = new List<Produto>();
+        List<Produto> produtos = new List<Produto>(); // atributo da classe
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace AtProduto
             produto1.Descricao = tb_descricao.Text;
             produto1.Preco = Convert.ToDouble(tb_preco.Text);
             produto1.Lucro = Convert.ToDouble(tb_lucro.Text);
-            produto1.Valor = produto1.Preco + ((produto1.Preco * produto1.Lucro) / 100);
+            produto1.Valor = produto1.Preco + (produto1.Preco * produto1.Lucro / 100);
 
             tb_valor.Text = Convert.ToString(produto1.Valor);
 
@@ -31,10 +31,9 @@ namespace AtProduto
 
             produtos.Add(produto1);
 
-            //foreach(Produto produto in produtos)
-            //{
-                //label.Text = $"Lista de produtos:   {produto.Codigo}  {produto.Valor}";
-            //}
+            dataGridView.DataSource = null; //vai limpar o que ja tinha
+            dataGridView.Refresh();
+            dataGridView.DataSource = produtos;
         }
 
 
