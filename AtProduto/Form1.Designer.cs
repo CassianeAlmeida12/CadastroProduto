@@ -30,29 +30,30 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.codigotxt = new System.Windows.Forms.TextBox();
+            this.tb_codigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.descricaotxt = new System.Windows.Forms.TextBox();
+            this.tb_descricao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.lucrotxt = new System.Windows.Forms.TextBox();
-            this.precotxt = new System.Windows.Forms.TextBox();
-            this.valortxt = new System.Windows.Forms.TextBox();
+            this.tb_lucro = new System.Windows.Forms.TextBox();
+            this.tb_preco = new System.Windows.Forms.TextBox();
+            this.tb_valor = new System.Windows.Forms.TextBox();
             this.excluir = new System.Windows.Forms.Button();
             this.novotxt = new System.Windows.Forms.Button();
             this.cadastrar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Serif Lao", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(107, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 58);
+            this.label1.Size = new System.Drawing.Size(354, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Produto";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -67,12 +68,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Código:";
             // 
-            // codigotxt
+            // tb_codigo
             // 
-            this.codigotxt.Location = new System.Drawing.Point(150, 107);
-            this.codigotxt.Name = "codigotxt";
-            this.codigotxt.Size = new System.Drawing.Size(100, 23);
-            this.codigotxt.TabIndex = 2;
+            this.tb_codigo.Location = new System.Drawing.Point(150, 107);
+            this.tb_codigo.Name = "tb_codigo";
+            this.tb_codigo.Size = new System.Drawing.Size(100, 23);
+            this.tb_codigo.TabIndex = 2;
+            this.tb_codigo.TextChanged += new System.EventHandler(this.codigo_TextChanged);
             // 
             // label3
             // 
@@ -84,12 +86,12 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Descrição:";
             // 
-            // descricaotxt
+            // tb_descricao
             // 
-            this.descricaotxt.Location = new System.Drawing.Point(450, 106);
-            this.descricaotxt.Name = "descricaotxt";
-            this.descricaotxt.Size = new System.Drawing.Size(100, 23);
-            this.descricaotxt.TabIndex = 4;
+            this.tb_descricao.Location = new System.Drawing.Point(450, 106);
+            this.tb_descricao.Name = "tb_descricao";
+            this.tb_descricao.Size = new System.Drawing.Size(100, 23);
+            this.tb_descricao.TabIndex = 4;
             // 
             // label4
             // 
@@ -121,26 +123,26 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Lucro %:";
             // 
-            // lucrotxt
+            // tb_lucro
             // 
-            this.lucrotxt.Location = new System.Drawing.Point(450, 144);
-            this.lucrotxt.Name = "lucrotxt";
-            this.lucrotxt.Size = new System.Drawing.Size(100, 23);
-            this.lucrotxt.TabIndex = 8;
+            this.tb_lucro.Location = new System.Drawing.Point(450, 144);
+            this.tb_lucro.Name = "tb_lucro";
+            this.tb_lucro.Size = new System.Drawing.Size(100, 23);
+            this.tb_lucro.TabIndex = 8;
             // 
-            // precotxt
+            // tb_preco
             // 
-            this.precotxt.Location = new System.Drawing.Point(160, 157);
-            this.precotxt.Name = "precotxt";
-            this.precotxt.Size = new System.Drawing.Size(100, 23);
-            this.precotxt.TabIndex = 9;
+            this.tb_preco.Location = new System.Drawing.Point(160, 157);
+            this.tb_preco.Name = "tb_preco";
+            this.tb_preco.Size = new System.Drawing.Size(100, 23);
+            this.tb_preco.TabIndex = 9;
             // 
-            // valortxt
+            // tb_valor
             // 
-            this.valortxt.Location = new System.Drawing.Point(160, 209);
-            this.valortxt.Name = "valortxt";
-            this.valortxt.Size = new System.Drawing.Size(100, 23);
-            this.valortxt.TabIndex = 10;
+            this.tb_valor.Location = new System.Drawing.Point(160, 209);
+            this.tb_valor.Name = "tb_valor";
+            this.tb_valor.Size = new System.Drawing.Size(100, 23);
+            this.tb_valor.TabIndex = 10;
             // 
             // excluir
             // 
@@ -180,24 +182,34 @@
             this.dataGridView1.Size = new System.Drawing.Size(452, 155);
             this.dataGridView1.TabIndex = 14;
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(22, 261);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(38, 15);
+            this.label.TabIndex = 15;
+            this.label.Text = "label7";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 450);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cadastrar);
             this.Controls.Add(this.novotxt);
             this.Controls.Add(this.excluir);
-            this.Controls.Add(this.valortxt);
-            this.Controls.Add(this.precotxt);
-            this.Controls.Add(this.lucrotxt);
+            this.Controls.Add(this.tb_valor);
+            this.Controls.Add(this.tb_preco);
+            this.Controls.Add(this.tb_lucro);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.descricaotxt);
+            this.Controls.Add(this.tb_descricao);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.codigotxt);
+            this.Controls.Add(this.tb_codigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -212,18 +224,19 @@
 
         private Label label1;
         private Label label2;
-        private TextBox codigotxt;
+        private TextBox tb_codigo;
         private Label label3;
-        private TextBox descricaotxt;
+        private TextBox tb_descricao;
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox lucrotxt;
-        private TextBox precotxt;
-        private TextBox valortxt;
+        private TextBox tb_lucro;
+        private TextBox tb_preco;
+        private TextBox tb_valor;
         private Button excluir;
         private Button novotxt;
         private Button cadastrar;
         private DataGridView dataGridView1;
+        private Label label;
     }
 }
